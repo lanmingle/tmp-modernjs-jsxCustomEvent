@@ -1,14 +1,10 @@
-import React from 'react';
+// jsxCustomEvent 在 rspack 中必须放到最顶部才会编译进来，如果在 webpack 中则不需要
 
-import { Helmet } from '@modern-js/runtime/head';
-
-// 注意：必须先导入 React 即: import React from 'react';
 /** @jsxRuntime classic */
 /** @jsx jsxCustomEvent */
 import jsxCustomEvent from '@micro-zoe/micro-app/polyfill/jsx-custom-event';
 
-// 注释后 jsxCustomEvent 则不会被编译
-// const __jsxCustomEvent__ = jsxCustomEvent;
+import { Helmet } from '@modern-js/runtime/head';
 
 export default function RootPage() {
   return (
