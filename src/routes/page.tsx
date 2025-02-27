@@ -1,4 +1,4 @@
-// jsxCustomEvent 在 rspack 中必须放到最顶部才会编译进来，如果在 webpack 中则不需要
+// 注释：jsxCustomEvent 在 rspack 中必须放到最顶部才会编译进来，如果在 webpack 中则不需要
 
 /** @jsxRuntime classic */
 /** @jsx jsxCustomEvent */
